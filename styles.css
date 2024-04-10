@@ -4,15 +4,31 @@
 }
 
 body {
+  background-color: gainsboro;
 }
 
 header {
   width: 100%;
   height: 12%;
+  top: 0;
   background-color: black;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
+}
+
+main {
+  margin-top: 120px;
+}
+
+.card {
+  width: 75%;
+  border: 1px solid black;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
