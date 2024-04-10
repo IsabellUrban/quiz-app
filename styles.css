@@ -5,6 +5,7 @@
 
 body {
   background-color: gainsboro;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
 }
 
 header {
@@ -25,10 +26,11 @@ main {
 
 .card {
   width: 75%;
-  border: 3px solid black;
+  height: auto;
+  border: 2px solid black;
   border-radius: 20px;
   background-color: white;
-  padding: 15px 30px;
+  padding: 15px 15px;
   display: flex;
   position: relative;
   align-items: center;
@@ -47,4 +49,44 @@ main {
   background-color: white;
   top: -20px;
   right: 10px;
+}
+
+.button {
+  background: gold;
+  border-color: gold;
+  border-radius: 6px;
+  color: black;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  min-height: 20px;
+  padding: 8px 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.tag-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.tag {
+  background: lightgray;
+  border-color: lightgray;
+  border-radius: 3px;
+  color: black;
+  font-size: 0.5rem;
+  font-weight: bold;
+  min-height: 10px;
+  padding: 4px 8px;
+  text-align: center;
+  margin: 5px 1px;
 }
