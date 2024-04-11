@@ -100,9 +100,11 @@ p {
 
 .tag-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin-top: 20px;
+  padding: 0;
+  list-style: none;
 }
 
 .tag {
