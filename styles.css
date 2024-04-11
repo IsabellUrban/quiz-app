@@ -148,3 +148,13 @@ footer {
   padding: 0;
   height: 100%;
 }
+
+.image {
+  width: 40px;
+  height: auto;
+  padding: 0;
+}
+
+.image-select {
+  background-color: yellow;
+}
