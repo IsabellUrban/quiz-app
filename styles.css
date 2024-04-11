@@ -19,6 +19,10 @@ header {
   align-items: center;
   position: fixed;
 }
+h1 {
+  text-align: center;
+  line-height: 1;
+}
 
 main {
   margin-top: 120px;
@@ -82,6 +86,16 @@ p {
   font-size: 1rem;
   text-align: center;
   margin-top: 10%;
+}
+
+.answer {
+  display: none;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.visible {
+  display: block;
 }
 
 .tag-box {
