@@ -164,6 +164,7 @@ footer {
   padding: 20px 30px;
   margin-top: 85px;
   padding bottom: 100px;
+  z-index: 1;
 }
 
 .user {
@@ -213,3 +214,10 @@ h3 {
   .bolt {
     width: 24px;
   }
+
+  .slider { 
+    display: inline-block; 
+    height: 34px; 
+    position: relative; 
+    width: 60px; 
+} 
