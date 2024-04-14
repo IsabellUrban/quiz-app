@@ -199,13 +199,17 @@ h3 {
 
   .counter {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
-    border: 2px solid #183a1d;
-    padding: 5px 10px;
-    width: 30vw;
-    background-color: #e1eedd;
-    color: #183a1d;
+    border: 2px solid black;
     border-radius: 10px;
+    padding: 5px 10px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+  }
 
+  .bolt {
+    width: 24px;
   }
