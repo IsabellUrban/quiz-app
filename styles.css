@@ -1,29 +1,11 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+@import "global.css";
+@import "./components/button.css";
+@import "./components/card.css";
+@import "./components/header.css";
+@import "./components/navigation.css";
 
-body {
-  background-color: gainsboro;
-  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-}
 
-header {
-  width: 100%;
-  height: 12%;
-  top: 0;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 1;
-}
-h1 {
-  text-align: center;
-  line-height: 1;
-}
+
 
 main {
   margin-top: 120px;
@@ -122,43 +104,6 @@ p {
   margin: 5px 1px;
 }
 
-footer {
-  position: fixed;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  z-index: 2;
-  bottom: 0;
-  height: 12%;
-  padding: 0;
-}
-
-.navbar {
-  flex-direction: column;
-  width: 100%;
-  list-style: none;
-  height: 100%;
-}
-
-.navbar ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0;
-  height: 100%;
-}
-
-.image {
-  width: 40px;
-  height: auto;
-  padding: 0;
-}
-
-.image-select {
-  background-color: yellow;
-}
 
 .profile-main {
   padding: 20px 30px;
