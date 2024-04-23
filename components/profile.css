@@ -60,11 +60,11 @@
 }
 
 .darkmode-box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 40px;
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
 
 .slider-darkmode-label {
   display: inline-block;
@@ -73,11 +73,11 @@
   width: 60px;
 }
 
-/* .slider-darkmode-checkbox {
+.slider-darkmode-checkbox {
   display: none;
-} */
+}
 
-/* .slider-darkmode-label-slider {
+.slider-darkmode-label-slider {
   position: absolute;
   top: 0;
   right: 0;
@@ -108,4 +108,4 @@ input:checked + .slider-darkmode-label-slider {
 input:checked + .slider-darkmode-label-slider:before {
   background-color: var(--primary-color);
   transform: translateX(26px);
-} */ */
+}
