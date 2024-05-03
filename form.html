@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js" defer></script>
+    <script src="form.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -12,25 +12,41 @@
       <h1>HARRY POTTER<br /><em>Quiz App</em></h1>
     </header>
     <main>
-      <form data-js="form">
-        <label for="your-qustion">Your Question:</label>
+      <form class="form" data-js="form">
+        <h2>New Quiz Card</h2>
+        <label class="label" for="yourQuestion">Your Question:</label>
         <textarea
-          name="your-qustion"
-          id="your-qustion"
+          name="your-question"
+          id="yourQuestion"
           cols="30"
-          rows="8"
+          rows="5"
+          class="textarea"
+          max="150"
+          data-js="your-question"
         ></textarea>
-        <label for="your-answer">Your Answer:</label>
+        <p class="remaining-characters">
+          <span data-js="remaining-characters-question">150</span> characters
+          left
+        </p>
+        <label class="label" for="yourAnswer">Your Answer:</label>
         <textarea
           name="your-answer"
-          id="your-answer"
+          id="yourAnswer"
           cols="30"
-          rows="8"
+          rows="5"
+          class="textarea"
+          max="150"
+          data-js="your-answer"
         ></textarea>
+        <p class="remaining-characters">
+          <span data-js="remaining-characters-answer">150</span> characters left
+        </p>
 
-        <label for="tag">Tag:</label>
-        <input type="text" name="tag" id="tag" />
-        <button type="submit">SUBMIT</button>
+        <label class="label" for="tag">Tag:</label>
+        <input class="textarea input-element" type="text" name="tag" id="tag" />
+        <div class="box-button">
+          <button class="submit-button" type="submit">SUBMIT</button>
+        </div>
       </form>
     </main>
     <footer>
