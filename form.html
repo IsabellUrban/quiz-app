@@ -11,7 +11,7 @@
     <header>
       <h1>HARRY POTTER<br /><em>Quiz App</em></h1>
     </header>
-    <main>
+    <main data-js="form-main">
       <form class="form" data-js="form">
         <h2>New Quiz Card</h2>
         <label class="label" for="yourQuestion">Your Question:</label>
@@ -21,7 +21,7 @@
           cols="30"
           rows="5"
           class="textarea"
-          max="150"
+          maxlength="150"
           data-js="your-question"
         ></textarea>
         <p class="remaining-characters">
@@ -35,7 +35,7 @@
           cols="30"
           rows="5"
           class="textarea"
-          max="150"
+          maxlength="150"
           data-js="your-answer"
         ></textarea>
         <p class="remaining-characters">

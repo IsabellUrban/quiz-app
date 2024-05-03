@@ -8,6 +8,7 @@ const charactersLeftQuestion = document.querySelector(
 const charactersLeftAnswer = document.querySelector(
   '[data-js="remaining-characters-answer"]'
 );
+const main = document.querySelector('[data-js="form-main"]');
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -22,12 +23,64 @@ form.addEventListener("submit", (event) => {
 
 // Characters Left counting
 
+function handleTextFieldInput(event, charactersLeftQuestion) {
+  charactersLeftQuestion.textContent =
+    event.target.getAttribute("maxlength") - event.target.value.length;
+}
+
 inputQuestion.addEventListener("input", (event) => {
-  const numberOfCharsEntered = event.target.value.length;
-  charactersLeftQuestion.textContent = 150 - numberOfCharsEntered;
+  handleTextFieldInput(event, charactersLeftQuestion);
 });
 
 inputAnswer.addEventListener("input", (event) => {
-  const numberOfCharsEntered = event.target.value.length;
-  charactersLeftAnswer.textContent = 150 - numberOfCharsEntered;
+  handleTextFieldInput(event, charactersLeftAnswer);
+});
+
+// Create new Card
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("sanity check");
+
+  const newCard = document.createElement("section");
+  newCard.classList.add("card");
+  newCard.setAttribute("data-js", "card");
+
+  const newBookmarkButton = document.createElement("button");
+  newBookmarkButton.classList.add("bookmark", "bookmark-selected");
+  newBookmarkButton.setAttribute("data-js", "bookmark1");
+  newBookmarkButton.innerHTML = `
+  <img
+  src="assets/lightning-297608.svg"
+  alt="lighting bolt"
+  data-js="img1"/>
+  `;
+
+  const newImg = newBookmarkButton.querySelector("img");
+  newBookmarkButton.addEventListener("click", () => {
+    newImg.classList.toggle("bookmark-selected");
+    if (newImg.classList.contains("bookmark-selected")) {
+      newImg.src = "assets/lightning-297608.svg";
+    } else {
+      newImg.src = "assets/lightning-303595.svg";
+    }
+  });
+  newCard.append(newBookmarkButton);
+
+  const newQuestionID = "new-question-";
+
+  const newQuestion = document.createElement("h2");
+  newQuestion.classList.add("question-fonts");
+  newQuestion.textContent = inputQuestion.value;
+  newCard.append(newQuestion);
+
+  const newAnswer = document.createElement("p");
+  newAnswer.classList.add("answer");
+  newAnswer.textContent = inputAnswer.value;
+  newCard.append(newAnswer);
+
+  main.append(newCard);
+
+  inputQuestion.value = "";
+  inputAnswer.value = "";
 });
