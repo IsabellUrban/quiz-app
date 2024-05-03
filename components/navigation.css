@@ -1,0 +1,41 @@
+footer {
+  position: fixed;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  bottom: 0;
+  height: 12%;
+  padding: 0;
+}
+
+.navbar {
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  height: 100%;
+}
+
+.image {
+  width: 40px;
+  height: auto;
+  padding: 0;
+  fill: var(--secondary-color);
+}
+
+.image-select {
+  width: 40px;
+  height: auto;
+  padding: 0;
+  fill: var(--highlight-color);
+}

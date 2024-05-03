@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -12,14 +13,23 @@
     </header>
     <main>
       <section class="card">
-        <img
-          src="assets/lightning-297608.svg"
-          alt="lighting bolt"
-          class="bookmark-selected"
-        />
-        <p>What position does Harry play on the Gryffindor Quidditch team?</p>
+        <button
+          type="button"
+          class="bookmark bookmark-selected"
+          data-js="bookmark1"
+        >
+          <img
+            src="assets/lightning-297608.svg"
+            alt="lighting bolt"
+            data-js="img1"
+          />
+        </button>
+
+        <h2 class="question-fonts">
+          What position does Harry play on the Gryffindor Quidditch team?
+        </h2>
         <p class="answer">Seeker</p>
-        <button class="button">SHOW ANSWER</button>
+        <button class="button" data-js="answerButton">SHOW ANSWER</button>
 
         <ul class="tag-box">
           <li class="tag"># Harry Potter</li>
@@ -29,13 +39,48 @@
       </section>
 
       <section class="card">
-        <img
-          src="assets/lightning-297608.svg"
-          alt="lighting bolt"
-          class="bookmark-selected"
-        />
-        <p>Who is the Headmaster of Hogwarts when Harry arrives?</p>
+        <button
+          type="button"
+          class="bookmark bookmark-selected"
+          data-js="bookmark2"
+        >
+          <img
+            src="assets/lightning-297608.svg"
+            alt="lighting bolt"
+            data-js="img2"
+          />
+        </button>
+        <h2 class="question-fonts">
+          Who is the Headmaster of Hogwarts when Harry arrives?
+        </h2>
         <p class="answer visible">Albus Dumbledore</p>
+        <button class="button" data-js="answerButton">HIDE ANSWER</button>
+
+        <ul class="tag-box">
+          <li class="tag"># Harry Potter</li>
+          <li class="tag"># Character</li>
+          <li class="tag"># Books</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <button
+          type="button"
+          class="bookmark bookmark-selected"
+          data-js="bookmark3"
+        >
+          <img
+            src="assets/lightning-297608.svg"
+            alt="lighting bolt"
+            data-js="img3"
+          />
+        </button>
+        <h2 class="question-fonts">
+          Who does Harry live with before going to Hogwarts?
+        </h2>
+        <p class="answer visible">
+          His aunt and uncle, Petunia and Vernon Dursley, and cousin Dudley.
+        </p>
         <button class="button">HIDE ANSWER</button>
 
         <ul class="tag-box">
@@ -50,27 +95,66 @@
         <ul>
           <li>
             <a href="./index.html">
-              <img
+              <svg
                 class="image"
-                src="assets/home_app_logo_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="Home grafik"
-            /></a>
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M180-120q-25 0-42.5-17.5T120-180v-76l160-142v278H180Zm140 0v-160h320v160H320Zm360 0v-328L509-600l121-107 190 169q10 9 15 20.5t5 24.5v313q0 25-17.5 42.5T780-120H680ZM120-310v-183q0-13 5-25t15-20l300-266q8-8 18.5-11.5T480-819q11 0 21.5 3.5T520-804l80 71-480 423Z"
+                />
+              </svg>
+            </a>
           </li>
           <li>
             <a href="./bookmark.html">
-              <img
-                class="image image-select"
-                src="assets/offline_bolt_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="Bookmark grafik"
-            /></a>
+              <svg
+                class="image-select"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="m456-200 174-340H510v-220L330-420h126v220Zm24 120q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                />
+              </svg>
+            </a>
           </li>
+
+          <li>
+            <a href="./form.html">
+              <svg
+                class="image"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+
           <li>
             <a href="./profile.html">
-              <img
+              <svg
                 class="image"
-                src="assets/face_4_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="Profile grafik"
-            /></a>
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M360-390q-21 0-35.5-14.5T310-440q0-21 14.5-35.5T360-490q21 0 35.5 14.5T410-440q0 21-14.5 35.5T360-390Zm240 0q-21 0-35.5-14.5T550-440q0-21 14.5-35.5T600-490q21 0 35.5 14.5T650-440q0 21-14.5 35.5T600-390ZM480-160q134 0 227-93t93-227q0-24-3-46.5T786-570q-21 5-42 7.5t-44 2.5q-91 0-172-39T390-708q-32 78-91.5 135.5T160-486v6q0 134 93 227t227 93Zm0 80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-54-715q42 70 114 112.5T700-640q14 0 27-1.5t27-3.5q-42-70-114-112.5T480-800q-14 0-27 1.5t-27 3.5ZM177-581q51-29 89-75t57-103q-51 29-89 75t-57 103Zm249-214Zm-103 36Z"
+                />
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>

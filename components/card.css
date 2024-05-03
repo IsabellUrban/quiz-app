@@ -1,0 +1,100 @@
+main {
+  margin-top: 120px;
+  padding-bottom: 100px;
+}
+
+.card {
+  width: 75%;
+  height: auto;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  padding: 5% 5%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 15%;
+}
+
+.bookmark {
+  border-radius: 50%;
+  max-width: 18%;
+  height: auto;
+  display: flex;
+  position: absolute;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  top: -20px;
+  right: 10px;
+  padding: 5px;
+}
+
+.bookmark img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.bookmark-selected img {
+  background-color: var(--primary-color);
+}
+
+.bookmark-selected {
+  background-color: var(--primary-color);
+}
+
+.button {
+  background: var(--highlight-color);
+  border-color: var(--highlight-color);
+  border-radius: 6px;
+  color: var(--primary-color);
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: bold;
+  min-height: 20px;
+  padding: 5% 10%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.question-fonts {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.answer {
+  display: none;
+}
+
+.visible {
+  display: block;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.tag-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10%;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  background: var(--backround-color);
+  border-color: var(--backround-color);
+  border-radius: 3px;
+  color: var(--primary-color);
+  font-size: 0.5rem;
+  font-weight: bold;
+  min-height: 10px;
+  padding: 3%;
+  text-align: center;
+  margin: 5% 2%;
+}
