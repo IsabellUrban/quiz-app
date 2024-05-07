@@ -60,9 +60,9 @@ form.addEventListener("submit", (event) => {
   newBookmarkButton.addEventListener("click", () => {
     newImg.classList.toggle("bookmark-selected");
     if (newImg.classList.contains("bookmark-selected")) {
-      newImg.src = "assets/lightning-297608.svg";
-    } else {
       newImg.src = "assets/lightning-303595.svg";
+    } else {
+      newImg.src = "assets/lightning-297608.svg";
     }
   });
   newCard.append(newBookmarkButton);
@@ -75,9 +75,24 @@ form.addEventListener("submit", (event) => {
   newCard.append(newQuestion);
 
   const newAnswer = document.createElement("p");
-  newAnswer.classList.add("answer");
+  newAnswer.classList.add("answer", "visible");
   newAnswer.textContent = inputAnswer.value;
   newCard.append(newAnswer);
+
+  const newAnswerButton = document.createElement("button");
+  newAnswerButton.classList.add("button");
+  newAnswerButton.textContent = "SHOW ANSWER";
+  newCard.append(newAnswerButton);
+
+  // newAnswerButton.addEventListener("click", () => {
+  //   const answer = newAnswerButton.previousElementSibling;
+  //   answer.classList.toggle("visible");
+  //   answer.classList.toggle("answer");
+  //   if (answer.classList.contains("visible")) {
+  //     answerButton.textContent = "HIDE ANSWER";
+  //   } else {
+  //     answerButton.textContent = "SHOW ANSWER";
+  //   }
 
   main.append(newCard);
 
